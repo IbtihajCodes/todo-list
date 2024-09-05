@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Rounded";
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+nav {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15aabf;
+  height: 50px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #2e2929;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.nav-list li a:hover {
+  color: #fff;
+}
+
+.todo-list {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.input-div {
+  display: flex;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  margin: 0;
+  padding: 0;
+  text-indent: 30px;
+  font-size: 16px;
+}
+
+input:active,
+input:focus {
+  outline: none;
+
+}
+
+.input-div button {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  width: 120px;
+  border: none;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.input-div button:hover {
+  background-color: #343333;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  ;
+}
+
+.size-5 {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-btn {
+  background-color: #fff;
+
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+.task-screen {
+  height: 35px;
+  width: 400px;
+}
+
+.task-btn-1,
+.task-btn-2 {
+  background: transparent;
+  border: none;
+  height: 35px;
+  padding: 0 8px;
+  transition: transform 0.5s;
+  padding-top: 4px;
+}
+
+.task-btn-2 {
+  padding-right: 12px;
+}
+
+.task-btn-1:hover,
+.task-btn-2:hover {
+  transform: scale(1.3);
+}
